@@ -81,6 +81,6 @@ F:\new\Vendas\WfaVendasFatec\WfaVendasFatec\obj\Debug\WfaVendasFatec.frmRptClien
 F:\new\Vendas\WfaVendasFatec\WfaVendasFatec\obj\Debug\WfaVendasFatec.csproj.CopyComplete
 F:\new\Vendas\WfaVendasFatec\WfaVendasFatec\obj\Debug\WfaVendasFatec.csproj.CoreCompileInputs.cache
 F:\new\Vendas\WfaVendasFatec\WfaVendasFatec\obj\Debug\WfaVendasFatec.FrmCadVendas.resources
-F:\new\Vendas\WfaVendasFatec\WfaVendasFatec\obj\Debug\WfaVendasFatec.csproj.AssemblyReference.cache
 F:\new\Vendas\WfaVendasFatec\WfaVendasFatec\obj\Debug\RdlCompile.cache
 F:\new\Vendas\WfaVendasFatec\WfaVendasFatec\obj\Debug\RdlCompile.compiled
+F:\new\Vendas\WfaVendasFatec\WfaVendasFatec\obj\Debug\WfaVendasFatec.FrmRptVendas.resources

@@ -64,28 +64,19 @@ namespace WfaVendasFatec
 
     private void HabilitaCamposItem(Control container, bool hab)
     {
-      foreach (Control campo in container.Controls)
-      {
-        if (!(campo is Label) && !(campo is DataGridView))
-        {
-          campo.Enabled = hab;
-        }
-      }
+      cmbProduto.Enabled = hab;
+      nudQuantidade.Enabled = hab;
     }
 
     private void HabilitaBotoesItem(Control container, bool hab)
     {
-      foreach (Control componente in container.Controls)
-      {
-        if (componente is Button)
-        {
-          componente.Enabled = hab;
-          if (componente.Name == "btnGravarItem" || componente.Name == "btnCancelarItem")
-          {
-            componente.Enabled = !hab;
-          }
-        }
-      }
+      btnIncluirItem.Enabled = hab;
+      btnIncluirItem.Enabled = hab;
+      btnAlterarItem.Enabled = hab;
+      btnPesquisarItem.Enabled = hab;
+      btnSair.Enabled = hab;
+      btnGravarItem.Enabled = hab;
+      btnCancelarItem.Enabled = hab;
     }
 
     private void LimpaCampos(Control container)
@@ -162,6 +153,7 @@ namespace WfaVendasFatec
       LimpaCampos(grpItens);
       HabilitaCampos(this, false);
       HabilitaBotoes(this, true);
+      HabilitaBotoes(grpItens, false);
       editar = false;
       incluir = false;
     }

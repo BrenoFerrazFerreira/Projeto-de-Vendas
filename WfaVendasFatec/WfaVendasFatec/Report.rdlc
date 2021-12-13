@@ -9,22 +9,22 @@
               <Width>1.89146cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>6.54813cm</Width>
+              <Width>6.14944cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>6.33646cm</Width>
+              <Width>5.43035cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.49458cm</Width>
+              <Width>1.31336cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.51083cm</Width>
+              <Width>3.82219cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.35208cm</Width>
+              <Width>3.48222cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.95521cm</Width>
+              <Width>2.90412cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -516,14 +516,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="DATA_NASC">
+                    <Textbox Name="DATANASC">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!DATA_NASC.Value</Value>
+                              <Value>=Fields!DATANASC.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
@@ -533,7 +533,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>DATA_NASC</rd:DefaultName>
+                      <rd:DefaultName>DATANASC</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -574,7 +574,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Height>1.2cm</Height>
-        <Width>29.08875cm</Width>
+        <Width>24.99314cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -582,13 +582,13 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>0.625in</Height>
+    <Height>0.63256in</Height>
     <Style />
   </Body>
-  <Width>11.45226in</Width>
+  <Width>9.83982in</Width>
   <Page>
     <PageHeader>
-      <Height>1.87854cm</Height>
+      <Height>1.26548cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -612,9 +612,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>ReportName</rd:DefaultName>
-          <Top>0.63182cm</Top>
           <Height>1.02333cm</Height>
-          <Width>29.08875cm</Width>
+          <Width>24.37094cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -634,39 +633,10 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>2.54cm</Height>
+      <Height>1.37842cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Textbox Name="PageNumber">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>=Globals!PageNumber</Value>
-                  <Style />
-                </TextRun>
-              </TextRuns>
-              <Style />
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>PageNumber</rd:DefaultName>
-          <Top>1.42558cm</Top>
-          <Left>9.68058cm</Left>
-          <Height>0.6cm</Height>
-          <Width>2.5cm</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
         <Textbox Name="TotalPages">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -674,19 +644,20 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>=Globals!TotalPages</Value>
+                  <Value>= "Página " &amp; Globals!PageNumber &amp; " de " &amp; Globals!TotalPages</Value>
                   <Style />
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>TotalPages</rd:DefaultName>
-          <Top>1.42558cm</Top>
-          <Left>12.74974cm</Left>
+          <Top>0.29626cm</Top>
+          <Left>20.06403cm</Left>
           <Height>0.6cm</Height>
-          <Width>2.5cm</Width>
-          <ZIndex>1</ZIndex>
+          <Width>4.92911cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -704,6 +675,10 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
+                  <Value>Emitido em:</Value>
+                  <Style />
+                </TextRun>
+                <TextRun>
                   <Value>=Globals!ExecutionTime</Value>
                   <Style />
                 </TextRun>
@@ -712,11 +687,11 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>ExecutionTime</rd:DefaultName>
-          <Top>1.10808cm</Top>
-          <Left>1.10807cm</Left>
+          <Top>0.29626cm</Top>
+          <Left>0.31432cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.11396cm</Width>
-          <ZIndex>2</ZIndex>
+          <Width>4.7225cm</Width>
+          <ZIndex>1</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -731,7 +706,11 @@
       <Style>
         <Border>
           <Style>None</Style>
+          <Width>2pt</Width>
         </Border>
+        <TopBorder>
+          <Style>Solid</Style>
+        </TopBorder>
       </Style>
     </PageFooter>
     <PageHeight>21cm</PageHeight>
@@ -792,8 +771,8 @@
           <DataField>TELEFONE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="DATA_NASC">
-          <DataField>DATA_NASC</DataField>
+        <Field Name="DATANASC">
+          <DataField>DATANASC</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>

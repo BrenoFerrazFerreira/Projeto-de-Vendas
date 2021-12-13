@@ -2,15 +2,15 @@
 {
 
 
-    partial class VendasRelatorioDataSet
+  partial class VendasRelatorioDataSet
+  {
+    partial class PC_CLIENTESDataTable
     {
-        partial class PC_CLIENTESDataTable
-        {
-        }
-
-        partial class DataTable1DataTable
-        {
-        }
-
     }
+
+    partial class DataTable1DataTable
+    {
+    }
+
+  }
 }
