@@ -116,6 +116,11 @@ namespace WfaVendasFatec
 
     private void relatórioDeVendasToolStripMenuItem_Click(object sender, EventArgs e)
     {
+      relatorioDeVendasToolStripMenuItem_Click(null, null);
+  }
+
+    private void relatorioDeVendasToolStripMenuItem_Click(object sender, EventArgs e)
+    {
       foreach (Form item in MdiChildren)
       {
         if (item is FrmRptVendas)
@@ -128,6 +133,6 @@ namespace WfaVendasFatec
       FrmRptVendas frmRptVendas = new FrmRptVendas();
       frmRptVendas.MdiParent = this;
       frmRptVendas.Show();
+    }
   }
-}
 }

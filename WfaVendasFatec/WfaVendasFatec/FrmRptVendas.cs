@@ -21,8 +21,7 @@ namespace WfaVendasFatec
     {
       // TODO: This line of code loads data into the 'VendasRelatorioDataSet.PC_VENDA' table. You can move, or remove it, as needed.
       this.PC_VENDATableAdapter.Fill(this.VendasRelatorioDataSet.PC_VENDA);
-
-      this.reportViewer1.RefreshReport();
+      reportViewer1.Refresh();
     }
   }
 }
