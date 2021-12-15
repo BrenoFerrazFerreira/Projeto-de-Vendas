@@ -110,6 +110,12 @@
     <Compile Include="frmRptClientes.Designer.cs">
       <DependentUpon>frmRptClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRptProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRptProdutos.Designer.cs">
+      <DependentUpon>FrmRptProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRptVendas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     <EmbeddedResource Include="frmRptClientes.resx">
       <DependentUpon>frmRptClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmRptProdutos.resx">
+      <DependentUpon>FrmRptProdutos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRptVendas.resx">
       <DependentUpon>FrmRptVendas.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +164,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Report.rdlc" />
+    <EmbeddedResource Include="rptProdutos.rdlc" />
     <EmbeddedResource Include="RptVendas.rdlc" />
     <None Include="BDDataSet.xsc">
       <DependentUpon>BDDataSet.xsd</DependentUpon>

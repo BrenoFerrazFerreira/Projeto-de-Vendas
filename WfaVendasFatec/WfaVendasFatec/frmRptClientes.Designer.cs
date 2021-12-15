@@ -30,13 +30,23 @@
         {
       this.components = new System.ComponentModel.Container();
       Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-      this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
       this.PC_CLIENTESBindingSource = new System.Windows.Forms.BindingSource(this.components);
       this.VendasRelatorioDataSet = new WfaVendasFatec.VendasRelatorioDataSet();
+      this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
       this.PC_CLIENTESTableAdapter = new WfaVendasFatec.VendasRelatorioDataSetTableAdapters.PC_CLIENTESTableAdapter();
       ((System.ComponentModel.ISupportInitialize)(this.PC_CLIENTESBindingSource)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.VendasRelatorioDataSet)).BeginInit();
       this.SuspendLayout();
+      // 
+      // PC_CLIENTESBindingSource
+      // 
+      this.PC_CLIENTESBindingSource.DataMember = "PC_CLIENTES";
+      this.PC_CLIENTESBindingSource.DataSource = this.VendasRelatorioDataSet;
+      // 
+      // VendasRelatorioDataSet
+      // 
+      this.VendasRelatorioDataSet.DataSetName = "VendasRelatorioDataSet";
+      this.VendasRelatorioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
       // 
       // reportViewer1
       // 
@@ -51,16 +61,6 @@
       this.reportViewer1.Size = new System.Drawing.Size(964, 483);
       this.reportViewer1.TabIndex = 0;
       // 
-      // PC_CLIENTESBindingSource
-      // 
-      this.PC_CLIENTESBindingSource.DataMember = "PC_CLIENTES";
-      this.PC_CLIENTESBindingSource.DataSource = this.VendasRelatorioDataSet;
-      // 
-      // VendasRelatorioDataSet
-      // 
-      this.VendasRelatorioDataSet.DataSetName = "VendasRelatorioDataSet";
-      this.VendasRelatorioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-      // 
       // PC_CLIENTESTableAdapter
       // 
       this.PC_CLIENTESTableAdapter.ClearBeforeFill = true;
@@ -69,7 +69,7 @@
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(966, 482);
+      this.ClientSize = new System.Drawing.Size(966, 391);
       this.Controls.Add(this.reportViewer1);
       this.Name = "frmRptClientes";
       this.Text = "Relatório de Clientes";

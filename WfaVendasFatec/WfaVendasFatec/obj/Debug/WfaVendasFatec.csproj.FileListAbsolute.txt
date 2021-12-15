@@ -161,3 +161,4 @@ E:\DS\Projeto\WfaVendasFatec\WfaVendasFatec\obj\Debug\Vendas.exe
 E:\DS\Projeto\WfaVendasFatec\WfaVendasFatec\obj\Debug\Vendas.pdb
 E:\DS\Projeto\WfaVendasFatec\WfaVendasFatec\obj\Debug\WfaVendasFatec.csproj.AssemblyReference.cache
 E:\DS\Projeto\WfaVendasFatec\WfaVendasFatec\obj\Debug\WfaVendasFatec.FrmCadProdutos.resources
+E:\DS\Projeto\WfaVendasFatec\WfaVendasFatec\obj\Debug\WfaVendasFatec.FrmRptProdutos.resources

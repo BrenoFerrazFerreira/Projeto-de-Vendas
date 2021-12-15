@@ -158,6 +158,7 @@ namespace WfaVendasFatec
       this.relatorioDeProdutosToolStripMenuItem.Name = "relatorioDeProdutosToolStripMenuItem";
       this.relatorioDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
       this.relatorioDeProdutosToolStripMenuItem.Text = "Relatório de &Produtos";
+      this.relatorioDeProdutosToolStripMenuItem.Click += new System.EventHandler(this.relatorioDeProdutosToolStripMenuItem_Click);
       // 
       // janelaToolStripMenuItem
       // 
@@ -175,31 +176,34 @@ namespace WfaVendasFatec
             this.cascataToolStripMenuItem,
             this.verticalToolStripMenuItem});
       this.organizarToolStripMenuItem.Name = "organizarToolStripMenuItem";
-      this.organizarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+      this.organizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
       this.organizarToolStripMenuItem.Text = "&Organizar";
       // 
       // horizontalToolStripMenuItem
       // 
       this.horizontalToolStripMenuItem.Name = "horizontalToolStripMenuItem";
-      this.horizontalToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+      this.horizontalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
       this.horizontalToolStripMenuItem.Text = "&Horizontal";
+      this.horizontalToolStripMenuItem.Click += new System.EventHandler(this.horizontalToolStripMenuItem_Click);
       // 
       // cascataToolStripMenuItem
       // 
       this.cascataToolStripMenuItem.Name = "cascataToolStripMenuItem";
-      this.cascataToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+      this.cascataToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
       this.cascataToolStripMenuItem.Text = "&Cascata";
+      this.cascataToolStripMenuItem.Click += new System.EventHandler(this.cascataToolStripMenuItem_Click);
       // 
       // verticalToolStripMenuItem
       // 
       this.verticalToolStripMenuItem.Name = "verticalToolStripMenuItem";
-      this.verticalToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+      this.verticalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
       this.verticalToolStripMenuItem.Text = "&Vertical";
+      this.verticalToolStripMenuItem.Click += new System.EventHandler(this.verticalToolStripMenuItem_Click);
       // 
       // toolStripSeparator2
       // 
       this.toolStripSeparator2.Name = "toolStripSeparator2";
-      this.toolStripSeparator2.Size = new System.Drawing.Size(122, 6);
+      this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
       // 
       // ajudaToolStripMenuItem
       // 
@@ -212,7 +216,7 @@ namespace WfaVendasFatec
       // sobreOSistemaToolStripMenuItem
       // 
       this.sobreOSistemaToolStripMenuItem.Name = "sobreOSistemaToolStripMenuItem";
-      this.sobreOSistemaToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+      this.sobreOSistemaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
       this.sobreOSistemaToolStripMenuItem.Text = "&Sobre o sistema";
       // 
       // stsStatus
@@ -309,7 +313,7 @@ namespace WfaVendasFatec
       this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
       this.toolStripSplitButton1.Name = "toolStripSplitButton1";
       this.toolStripSplitButton1.Size = new System.Drawing.Size(32, 22);
-      this.toolStripSplitButton1.Text = "toolStripSplitButton1";
+      this.toolStripSplitButton1.Text = "Relatórios";
       // 
       // relatórioDeClientesToolStripMenuItem
       // 
@@ -330,6 +334,7 @@ namespace WfaVendasFatec
       this.relatórioDeProdutosToolStripMenuItem.Name = "relatórioDeProdutosToolStripMenuItem";
       this.relatórioDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
       this.relatórioDeProdutosToolStripMenuItem.Text = "Relatório de Produtos";
+      this.relatórioDeProdutosToolStripMenuItem.Click += new System.EventHandler(this.relatórioDeProdutosToolStripMenuItem_Click);
       // 
       // toolStripSeparator4
       // 

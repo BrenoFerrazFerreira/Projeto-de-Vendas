@@ -111,7 +111,7 @@ namespace WfaVendasFatec
 
     private void relatórioDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
     {
-      relatorioDeClientesToolStripMenuItem_Click(null, null);
+      relatorioDeClientesToolStripMenuItem_Click_1(null, null);
     }
 
     private void relatórioDeVendasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -154,6 +154,42 @@ namespace WfaVendasFatec
     private void btnCadProdutos_Click(object sender, EventArgs e)
     {
       cadastroDeProdutosToolStripMenuItem_Click(null, null);
+    }
+
+    private void cascataToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      this.LayoutMdi(System.Windows.Forms.MdiLayout.Cascade);
+    }
+
+    private void verticalToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      this.LayoutMdi(System.Windows.Forms.MdiLayout.TileVertical);
+    }
+
+    private void horizontalToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      this.LayoutMdi(System.Windows.Forms.MdiLayout.TileHorizontal);
+    }
+
+    private void relatorioDeProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      foreach (Form item in MdiChildren)
+      {
+        if (item is FrmRptProdutos)
+        {
+          item.Focus();
+          return;
+        }
+      }
+
+      FrmRptProdutos frmRptProdutos = new FrmRptProdutos();
+      frmRptProdutos.MdiParent = this;
+      frmRptProdutos.Show();
+    }
+
+    private void relatórioDeProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      relatorioDeProdutosToolStripMenuItem_Click(null, null);
     }
   }
 }
