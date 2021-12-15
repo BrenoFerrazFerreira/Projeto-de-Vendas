@@ -36,47 +36,41 @@ namespace WfaVendasFatec
       }
     }
 
-    private void HabilitaCampos(Control container, bool hab)
+    private void HabilitaCampos(bool hab)
     {
-      foreach (Control campo in container.Controls)
-      {
-        if (!(campo is Label) && !(campo is DataGridView))
-        {
-          campo.Enabled = hab;
-        }
-      }
+      txtNumVenda.Enabled = hab;
+      cmbCodCli.Enabled = hab;
+      dtpDataEntrega.Enabled = hab;
+      dtpDataVenda.Enabled = hab;
+      txtObs.Enabled = hab;
     }
 
-    private void HabilitaBotoes(Control container, bool hab)
+    private void HabilitaBotoes(bool hab)
     {
-      foreach (Control componente in container.Controls)
-      {
-        if (componente is Button)
-        {
-          componente.Enabled = hab;
-          if (componente.Name == "btnGravar" || componente.Name == "btnCancelar")
-          {
-            componente.Enabled = !hab;
-          }
-        }
-      }
+      btnIncluir.Enabled = hab;
+      btnExcluir.Enabled = hab;
+      btnAlterar.Enabled = hab;
+      btnPesquisar.Enabled = hab;
+      btnSair.Enabled = hab;
+      btnGravar.Enabled = !hab;
+      btnCancelar.Enabled = !hab;
     }
 
-    private void HabilitaCamposItem(Control container, bool hab)
+    private void HabilitaCamposItem(bool hab)
     {
       cmbProduto.Enabled = hab;
       nudQuantidade.Enabled = hab;
     }
 
-    private void HabilitaBotoesItem(Control container, bool hab)
+    private void HabilitaBotoesItem(bool hab)
     {
       btnIncluirItem.Enabled = hab;
-      btnIncluirItem.Enabled = hab;
+      btnExcluirItem.Enabled = hab;
       btnAlterarItem.Enabled = hab;
       btnPesquisarItem.Enabled = hab;
       btnSair.Enabled = hab;
-      btnGravarItem.Enabled = hab;
-      btnCancelarItem.Enabled = hab;
+      btnGravarItem.Enabled = !hab;
+      btnCancelarItem.Enabled = !hab;
     }
 
     private void LimpaCampos(Control container)
@@ -118,8 +112,8 @@ namespace WfaVendasFatec
     private void btnIncluir_Click(object sender, EventArgs e)
     {
       incluir = true;
-      HabilitaCampos(this, true);
-      HabilitaBotoes(this, false);
+      HabilitaCampos(true);
+      HabilitaBotoes(false);
       cmbCodCli.Focus();
     }
 
@@ -151,9 +145,8 @@ namespace WfaVendasFatec
     {
       LimpaCampos(this);
       LimpaCampos(grpItens);
-      HabilitaCampos(this, false);
-      HabilitaBotoes(this, true);
-      HabilitaBotoes(grpItens, false);
+      HabilitaCampos(false);
+      HabilitaBotoes(true);
       editar = false;
       incluir = false;
     }
@@ -194,8 +187,8 @@ namespace WfaVendasFatec
       if (dgvVendas.SelectedRows.Count > 0)
       {
         editar = true;
-        HabilitaBotoes(this, false);
-        HabilitaCampos(this, true);
+        HabilitaBotoes(false);
+        HabilitaCampos(true);
         txtNumVenda.Enabled = false;
         int linha = dgvVendas.CurrentRow.Index;
         txtNumVenda.Text = dgvVendas[0, linha].Value.ToString();
@@ -217,7 +210,7 @@ namespace WfaVendasFatec
       {
         cmbCodCli.Enabled = true;
         cmbCodCli.Focus();
-        HabilitaBotoes(this, false);
+        HabilitaBotoes(false);
         btnPesquisar.Enabled = true;
         btnGravar.Enabled = false;
         btnCancelar.Enabled = false;
@@ -264,8 +257,8 @@ namespace WfaVendasFatec
     private void btnIncluirItem_Click(object sender, EventArgs e)
     {
       incluirItem = true;
-      HabilitaCamposItem(grpItens, true);
-      HabilitaBotoesItem(grpItens, false);
+      HabilitaCamposItem(true);
+      HabilitaBotoesItem(false);
       cmbProduto_SelectedIndexChanged(null, null);
       cmbProduto.Focus();
     }
@@ -322,8 +315,8 @@ namespace WfaVendasFatec
       if (dgvItem.SelectedRows.Count > 0)
       {
         editarItem = true;
-        HabilitaBotoesItem(grpItens, false);
-        HabilitaCamposItem(grpItens, true);
+        HabilitaBotoesItem(false);
+        HabilitaCamposItem(true);
         cmbProduto.Text =
             dgvItem[1, dgvItem.CurrentRow.Index].Value.ToString();
         cmbProduto_SelectedIndexChanged(null, null);
@@ -346,7 +339,7 @@ namespace WfaVendasFatec
           {
             cmbProduto.Enabled = true;
             cmbProduto.Focus();
-            HabilitaBotoesItem(grpItens, false);
+            HabilitaBotoesItem(false);
             btnPesquisarItem.Enabled = true;
             btnGravarItem.Enabled = false;
             btnCancelarItem.Enabled = false;
@@ -374,8 +367,8 @@ namespace WfaVendasFatec
     private void btnCancelarItem_Click(object sender, EventArgs e)
     {
       LimpaCampos(grpItens);
-      HabilitaCamposItem(grpItens, false);
-      HabilitaBotoesItem(grpItens, true);
+      HabilitaCamposItem(false);
+      HabilitaBotoesItem(true);
       editarItem = false;
       incluirItem = false;
     }

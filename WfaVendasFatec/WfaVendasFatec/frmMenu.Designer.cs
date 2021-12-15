@@ -57,7 +57,7 @@ namespace WfaVendasFatec
       this.toolStrip1 = new System.Windows.Forms.ToolStrip();
       this.btnCadClientes = new System.Windows.Forms.ToolStripButton();
       this.btnCadVendas = new System.Windows.Forms.ToolStripButton();
-      this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+      this.btnCadProdutos = new System.Windows.Forms.ToolStripButton();
       this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
       this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
       this.relatórioDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -115,6 +115,7 @@ namespace WfaVendasFatec
       this.cadastroDeProdutosToolStripMenuItem.Name = "cadastroDeProdutosToolStripMenuItem";
       this.cadastroDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
       this.cadastroDeProdutosToolStripMenuItem.Text = "Cadastro de &Produtos";
+      this.cadastroDeProdutosToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeProdutosToolStripMenuItem_Click);
       // 
       // toolStripSeparator1
       // 
@@ -250,7 +251,7 @@ namespace WfaVendasFatec
       this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnCadClientes,
             this.btnCadVendas,
-            this.toolStripButton3,
+            this.btnCadProdutos,
             this.toolStripSeparator3,
             this.toolStripSplitButton1,
             this.toolStripSeparator4,
@@ -282,14 +283,15 @@ namespace WfaVendasFatec
       this.btnCadVendas.Text = "Cadastro de Vendas";
       this.btnCadVendas.Click += new System.EventHandler(this.btnCadVendas_Click);
       // 
-      // toolStripButton3
+      // btnCadProdutos
       // 
-      this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-      this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-      this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-      this.toolStripButton3.Name = "toolStripButton3";
-      this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
-      this.toolStripButton3.Text = "toolStripButton3";
+      this.btnCadProdutos.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+      this.btnCadProdutos.Image = ((System.Drawing.Image)(resources.GetObject("btnCadProdutos.Image")));
+      this.btnCadProdutos.ImageTransparentColor = System.Drawing.Color.Magenta;
+      this.btnCadProdutos.Name = "btnCadProdutos";
+      this.btnCadProdutos.Size = new System.Drawing.Size(23, 22);
+      this.btnCadProdutos.Text = "Cadastro de Produtos";
+      this.btnCadProdutos.Click += new System.EventHandler(this.btnCadProdutos_Click);
       // 
       // toolStripSeparator3
       // 
@@ -397,7 +399,7 @@ namespace WfaVendasFatec
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnCadClientes;
         private System.Windows.Forms.ToolStripButton btnCadVendas;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton btnCadProdutos;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;

@@ -4,12 +4,12 @@ namespace WfaVendasFatec
 {
 
 
-    partial class BDDataSet
+  partial class BDDataSet
+  {
+    partial class PC_VENDADataTable
     {
-        partial class PC_VENDADataTable
-        {
-        }
     }
+  }
 }
 
 

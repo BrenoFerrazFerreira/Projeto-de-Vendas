@@ -40,10 +40,10 @@ namespace WfaVendasFatec
       System.Windows.Forms.Label pRECOUNITLabel;
       System.Windows.Forms.Label subTotalLabel;
       System.Windows.Forms.Label label1;
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
       this.btnCancelar = new System.Windows.Forms.Button();
       this.btnGravar = new System.Windows.Forms.Button();
       this.btnPesquisar = new System.Windows.Forms.Button();
@@ -388,8 +388,8 @@ namespace WfaVendasFatec
       // dataGridViewTextBoxColumn2
       // 
       this.dataGridViewTextBoxColumn2.DataPropertyName = "DATAVENDA";
-      dataGridViewCellStyle1.Format = "dd/MM/yyyy";
-      this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle1;
+      dataGridViewCellStyle5.Format = "dd/MM/yyyy";
+      this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle5;
       this.dataGridViewTextBoxColumn2.HeaderText = "Data da Venda";
       this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
       this.dataGridViewTextBoxColumn2.ReadOnly = true;
@@ -398,8 +398,8 @@ namespace WfaVendasFatec
       // dataGridViewTextBoxColumn3
       // 
       this.dataGridViewTextBoxColumn3.DataPropertyName = "DATAENTREGA";
-      dataGridViewCellStyle2.Format = "dd/MM/yyyy";
-      this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle2;
+      dataGridViewCellStyle6.Format = "dd/MM/yyyy";
+      this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle6;
       this.dataGridViewTextBoxColumn3.HeaderText = "Data da Entrega";
       this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
       this.dataGridViewTextBoxColumn3.ReadOnly = true;
@@ -476,9 +476,9 @@ namespace WfaVendasFatec
       // dataGridViewTextBoxColumn10
       // 
       this.dataGridViewTextBoxColumn10.DataPropertyName = "PRECOUNIT";
-      dataGridViewCellStyle3.Format = "R$ #,###,##0.00";
-      dataGridViewCellStyle3.NullValue = null;
-      this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle3;
+      dataGridViewCellStyle7.Format = "R$ #,###,##0.00";
+      dataGridViewCellStyle7.NullValue = null;
+      this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle7;
       this.dataGridViewTextBoxColumn10.HeaderText = "Preço Unit.";
       this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
       this.dataGridViewTextBoxColumn10.ReadOnly = true;
@@ -486,8 +486,8 @@ namespace WfaVendasFatec
       // dataGridViewTextBoxColumn11
       // 
       this.dataGridViewTextBoxColumn11.DataPropertyName = "SubTotal";
-      dataGridViewCellStyle4.Format = "R$ #,###,##0.00";
-      this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle4;
+      dataGridViewCellStyle8.Format = "R$ #,###,##0.00";
+      this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle8;
       this.dataGridViewTextBoxColumn11.HeaderText = "SubTotal";
       this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
       this.dataGridViewTextBoxColumn11.ReadOnly = true;
@@ -766,10 +766,10 @@ namespace WfaVendasFatec
         private System.Windows.Forms.Button btnIncluirItem;
         private System.Windows.Forms.BindingSource pCPRODUTOBindingSource;
         private BDDataSetTableAdapters.PC_PRODUTOTableAdapter pC_PRODUTOTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-    }
+    private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+    private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+    private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+    private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+    private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+  }
 }

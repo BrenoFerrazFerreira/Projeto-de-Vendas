@@ -134,5 +134,26 @@ namespace WfaVendasFatec
       frmRptVendas.MdiParent = this;
       frmRptVendas.Show();
     }
+
+    private void cadastroDeProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      foreach (Form item in MdiChildren)
+      {
+        if (item is FrmCadProdutos)
+        {
+          item.Focus();
+          return;
+        }
+      }
+
+      FrmCadProdutos frmCadProdutos = new FrmCadProdutos();
+      frmCadProdutos.MdiParent = this;
+      frmCadProdutos.Show();
+  }
+
+    private void btnCadProdutos_Click(object sender, EventArgs e)
+    {
+      cadastroDeProdutosToolStripMenuItem_Click(null, null);
+    }
   }
 }
